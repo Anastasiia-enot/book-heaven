@@ -5,75 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Книжковий Рай — шкільний проєкт про бібліотеку та улюблені книжки.">
   <title>Книжковий Рай</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <main>
-    <nav aria-label="Розділи сайту">
-      <a href="#about">Бібліотека</a>
-      <a href="#books">Колекція</a>
-      <a href="#subscribe">Підписка</a>
-    </nav>
-    <p class="logo" aria-hidden="true">📖</p>
-    <h1>Книжковий Рай</h1>
-    <p>Відкрий для себе наступну чудову книгу</p>
-    <a class="button" href="#about">Дізнатися більше</a>
+  <main class="section-main">
+    <img class="section-main-logo" src="img/logo.png" alt="Логотип із розгорнутою книжкою" width="160" height="128">
+    <h1 class="section-main-title">Книжковий Рай</h1>
+    <h2 class="section-main-subtitle">Відкрий для себе наступну чудову книгу</h2>
+    <button class="section-main-button" type="button">Дізнатися більше</button>
   </main>
 
-  <section id="about" aria-labelledby="about-title">
-    <img src="img/library.png" alt="Розгорнута книжка, над сторінками якої летять птахи" width="99" height="74">
-    <div>
-      <h2 id="about-title">Про нашу бібліотеку</h2>
-      <p>У «Книжковому Раю» є казки, пригодницькі історії та книжки про дружбу. Завітай, щоб почитати в затишному куточку або вибрати книжку додому.</p>
-      <p><strong>Іван Іваненко</strong> — засновник Книжкового Раю.</p>
+  <section class="second-section" id="about" aria-labelledby="about-title">
+    <img class="second-section-img" src="img/library.png" alt="Розгорнута книжка, над сторінками якої летять птахи" width="99" height="74">
+    <div class="second-section-info">
+      <h3 class="section-subtitle">Ласкаво просимо до Книжкового Раю</h3>
+      <h3 class="section-title" id="about-title" tabindex="-1">Про нашу бібліотеку</h3>
+      <p class="second-section-text">Ласкаво просимо до нашої бібліотеки, де ви знайдете широкий вибір книг для будь-якого віку та вподобань. Приходьте та насолоджуйтеся читанням у затишній атмосфері.</p>
+      <p class="second-section-name"><span class="second-section-name2">Іван Іваненко</span> - Засновник Книжкового Раю</p>
     </div>
   </section>
 
-  <section id="books" aria-labelledby="books-title">
-    <h2 id="books-title">Наша колекція</h2>
-    <div class="books">
-      <article>
-        <div class="cover" aria-hidden="true">✦<br>Маленький<br>принц</div>
-        <h3>Маленький принц</h3>
-        <p>Антуан де Сент-Екзюпері</p>
-        <p class="price">150 грн</p>
-      </article>
-      <article>
-        <div class="cover" aria-hidden="true">🌿<br>Тореадори<br>з Васюківки</div>
-        <h3>Тореадори з Васюківки</h3>
-        <p>Всеволод Нестайко</p>
-        <p class="price">180 грн</p>
-      </article>
-      <article>
-        <div class="cover" aria-hidden="true">🍫<br>Чарлі і шоколадна<br>фабрика</div>
-        <h3>Чарлі і шоколадна фабрика</h3>
-        <p>Роальд Дал</p>
-        <p class="price">200 грн</p>
-      </article>
-      <article>
-        <div class="cover" aria-hidden="true">☾<br>Країна<br>Мумі-тролів</div>
-        <h3>Країна Мумі-тролів</h3>
-        <p>Туве Янссон</p>
-        <p class="price">190 грн</p>
-      </article>
+  <section class="third-section" aria-labelledby="books-title">
+    <h3 class="section-subtitle">Рекомендовані книги</h3>
+    <h3 class="section-title" id="books-title">Наша колекція</h3>
+    <div class="third-section-books">
+      <div class="third-section-book">
+        <img class="book-img" src="img/little-prince.png" alt="Обкладинка книжки «Маленький принц»" width="150" height="200">
+        <h4 class="book-title">Маленький принц</h4>
+        <p class="book-author">Антуан де Сент-Екзюпері</p>
+        <p class="book-price">150 грн</p>
+      </div>
+      <div class="third-section-book">
+        <img class="book-img" src="img/toreadors.png" alt="Обкладинка книжки «Тореадори з Васюківки»" width="150" height="200">
+        <h4 class="book-title">Тореадори з Васюківки</h4>
+        <p class="book-author">Всеволод Нестайко</p>
+        <p class="book-price">180 грн</p>
+      </div>
+      <div class="third-section-book">
+        <img class="book-img" src="img/charlie.png" alt="Обкладинка книжки «Чарлі і шоколадна фабрика»" width="150" height="200">
+        <h4 class="book-title">Чарлі і шоколадна фабрика</h4>
+        <p class="book-author">Роальд Дал</p>
+        <p class="book-price">200 грн</p>
+      </div>
+      <div class="third-section-book">
+        <img class="book-img" src="img/moomins.png" alt="Обкладинка книжки «Країна Мумі-тролів»" width="150" height="200">
+        <h4 class="book-title">Країна Мумі-тролів</h4>
+        <p class="book-author">Туве Янссон</p>
+        <p class="book-price">190 грн</p>
+      </div>
     </div>
-    <p>Ціни наведено для прикладу.</p>
   </section>
 
-  <footer id="subscribe">
-    <h2>Приєднуйтесь до нашої спільноти</h2>
-    <p>Спробуй підписатися, щоб дізнаватися про нові книжки.</p>
-    <p>Контакт бібліотеки (приклад) — <span>+380 00 000 00 00</span></p>
-    <form>
+  <footer class="footer">
+    <h3 class="section-subtitle">Книжковий Рай</h3>
+    <h3 class="section-title footer-title">Приєднуйтесь до нашої спільноти</h3>
+    <p class="footer-text"><span class="footer-text-main">Підпишіться на нашу розсилку, щоб отримувати останні новини про новинки, ексклюзивні пропозиції та багато іншого.</span><br>Для запитів, будь ласка, зв’яжіться з нами за номером (+380) 123-456-789</p>
+    <form action="" class="footer-form" aria-describedby="form-note">
       <p id="form-note">Навчальна форма. Використовуй вигадані дані.</p>
-      <label for="name">Ім’я</label>
-      <input id="name" type="text" required>
-      <label for="email">Електронна пошта</label>
-      <input id="email" type="email" placeholder="reader@example.com" required>
-      <label for="phone">Телефон (необов’язково)</label>
-      <input id="phone" type="tel">
-      <button type="submit">Підписатися</button>
+      <p class="form-title"><label for="name">Ім’я</label></p>
+      <input type="text" id="name" class="form-input" required>
+      <p class="form-title"><label for="email">Електронна пошта</label></p>
+      <input type="email" id="email" class="form-input" required>
+      <p class="form-title"><label for="phone">Телефон</label></p>
+      <input type="tel" id="phone" class="form-input">
+      <button class="footer-button" type="submit">Підписатися</button>
       <p id="form-status" role="status"></p>
     </form>
   </footer>
