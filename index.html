@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Книжковий Рай — шкільний проєкт про бібліотеку та улюблені книжки.">
+  <title>Книжковий Рай</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <nav aria-label="Розділи сайту">
+      <a href="#about">Бібліотека</a>
+      <a href="#books">Колекція</a>
+      <a href="#subscribe">Підписка</a>
+    </nav>
+    <p class="logo" aria-hidden="true">📖</p>
+    <h1>Книжковий Рай</h1>
+    <p>Відкрий для себе наступну чудову книгу</p>
+    <a class="button" href="#about">Дізнатися більше</a>
+  </main>
+
+  <section id="about" aria-labelledby="about-title">
+    <img src="img/library.png" alt="Розгорнута книжка, над сторінками якої летять птахи" width="99" height="74">
+    <div>
+      <h2 id="about-title">Про нашу бібліотеку</h2>
+      <p>У «Книжковому Раю» є казки, пригодницькі історії та книжки про дружбу. Завітай, щоб почитати в затишному куточку або вибрати книжку додому.</p>
+      <p><strong>Іван Іваненко</strong> — засновник Книжкового Раю.</p>
+    </div>
+  </section>
+
+  <section id="books" aria-labelledby="books-title">
+    <h2 id="books-title">Наша колекція</h2>
+    <div class="books">
+      <article>
+        <div class="cover" aria-hidden="true">✦<br>Маленький<br>принц</div>
+        <h3>Маленький принц</h3>
+        <p>Антуан де Сент-Екзюпері</p>
+        <p class="price">150 грн</p>
+      </article>
+      <article>
+        <div class="cover" aria-hidden="true">🌿<br>Тореадори<br>з Васюківки</div>
+        <h3>Тореадори з Васюківки</h3>
+        <p>Всеволод Нестайко</p>
+        <p class="price">180 грн</p>
+      </article>
+      <article>
+        <div class="cover" aria-hidden="true">🍫<br>Чарлі і шоколадна<br>фабрика</div>
+        <h3>Чарлі і шоколадна фабрика</h3>
+        <p>Роальд Дал</p>
+        <p class="price">200 грн</p>
+      </article>
+      <article>
+        <div class="cover" aria-hidden="true">☾<br>Країна<br>Мумі-тролів</div>
+        <h3>Країна Мумі-тролів</h3>
+        <p>Туве Янссон</p>
+        <p class="price">190 грн</p>
+      </article>
+    </div>
+    <p>Ціни наведено для прикладу.</p>
+  </section>
+
+  <footer id="subscribe">
+    <h2>Приєднуйтесь до нашої спільноти</h2>
+    <p>Спробуй підписатися, щоб дізнаватися про нові книжки.</p>
+    <p>Контакт бібліотеки (приклад) — <span>+380 00 000 00 00</span></p>
+    <form>
+      <p id="form-note">Навчальна форма. Використовуй вигадані дані.</p>
+      <label for="name">Ім’я</label>
+      <input id="name" type="text" required>
+      <label for="email">Електронна пошта</label>
+      <input id="email" type="email" placeholder="reader@example.com" required>
+      <label for="phone">Телефон (необов’язково)</label>
+      <input id="phone" type="tel">
+      <button type="submit">Підписатися</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </footer>
+</body>
+</html>
